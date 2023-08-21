@@ -1,19 +1,76 @@
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
+  background-color: #FFEFE7;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 nav {
-  width: 100%;
-  height: 100px;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  color: #7C6A0A;
+  padding: 15px;
+}
+nav p {
+  font-size: 1.5em;
+  padding-left: 30px;
+}
+nav .icons {
+  display: flex;
+  gap: 15px;
+}
+nav .icons button {
+  background: none;
+  border-style: none;
 }
 
 main {
   background-color: #FFEFE7;
+  width: 100%;
+  margin: 0;
+}
+
+article {
+  width: auto;
+  color: #7C6A0A;
+  padding-left: 45px;
+  padding-right: 45px;
+  display: flex;
+  justify-content: space-between;
+}
+article .impact-section {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  gap: 25px;
+}
+article h1 {
+  font-size: 3em;
+  padding: 0px;
+  margin: 0px;
+}
+article p {
+  font-size: 1.5em;
+  padding-left: 10px;
+}
+article button {
+  width: 12vw;
+  padding: 20px;
+  background-color: #FA9500;
+  border-style: none;
+  font-size: 1em;
+  border-radius: 35px;
+  color: white;
+}
+article img {
+  width: 25vw;
+  border-radius: 19px;
 }
 
 footer {
   background-color: #FA9500;
   width: 100%;
   height: 250px;
+  margin-top: 0;
 }/*# sourceMappingURL=main.css.map */
