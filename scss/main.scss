@@ -5,6 +5,7 @@ $primary-text-color: #7C6A0A;
 $font-stack:'IBM Plex Sans', sans-serif;
 $paragraph-size:1.5em;
 $queaternion-color:#FA9500;
+$heder-margin-top:10px;
 
 
 
@@ -23,17 +24,24 @@ nav{
     justify-content: space-between;
     color: $primary-text-color;
     padding: 15px;
+    
 
      p{
        
-         font-size: $paragraph-size;
+         font-size: 2.3em ;
          padding-left: 30px;
+         margin-top: $heder-margin-top;
+         
        
     }
 
     .icons{
          display:flex;
          gap: 15px;
+         margin-bottom: 50px;
+         margin-top: $heder-margin-top;
+         size: 3em;
+         
           
           button{
             background: none;
@@ -55,6 +63,7 @@ article{
      color: $primary-text-color;
      padding-left: 45px;
      padding-right: 45px;
+     padding: 70px;
    display: flex;
    justify-content: space-between;
 
@@ -96,6 +105,38 @@ article{
 
      
      
+section{
+    width: 100%;
+    height: auto;
+   
+    padding: 60px;
+    h2{
+        color: $primary-text-color;
+        font-size: 2em;
+    }
+
+    .healthcare{
+
+        h2{
+            font-weight: 300;
+            padding-bottom: 60px;
+        }
+        .product-card{
+            width: 15vw;
+            height: auto;
+            background-color: $secondary-color;
+            color: $primary-text-color;
+            padding: 20px;
+            border-radius: 8px;
+            img{
+                width: 100px;
+            
+
+            }
+        }
+    }
+
+}
 
 
 

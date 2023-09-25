@@ -13,12 +13,16 @@ nav {
   padding: 15px;
 }
 nav p {
-  font-size: 1.5em;
+  font-size: 2.3em;
   padding-left: 30px;
+  margin-top: 10px;
 }
 nav .icons {
   display: flex;
   gap: 15px;
+  margin-bottom: 50px;
+  margin-top: 10px;
+  size: 3em;
 }
 nav .icons button {
   background: none;
@@ -36,6 +40,7 @@ article {
   color: #7C6A0A;
   padding-left: 45px;
   padding-right: 45px;
+  padding: 70px;
   display: flex;
   justify-content: space-between;
 }
@@ -66,6 +71,31 @@ article button {
 article img {
   width: 25vw;
   border-radius: 19px;
+}
+
+section {
+  width: 100%;
+  height: auto;
+  padding: 60px;
+}
+section h2 {
+  color: #7C6A0A;
+  font-size: 2em;
+}
+section .healthcare h2 {
+  font-weight: 300;
+  padding-bottom: 60px;
+}
+section .healthcare .product-card {
+  width: 15vw;
+  height: auto;
+  background-color: #FFDAC6;
+  color: #7C6A0A;
+  padding: 20px;
+  border-radius: 8px;
+}
+section .healthcare .product-card img {
+  width: 100px;
 }
 
 footer {
