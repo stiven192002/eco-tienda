@@ -87,7 +87,7 @@ section .healthcare, section .furniture {
 }
 section .healthcare h2, section .furniture h2 {
   font-weight: 300;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
 }
 section .healthcare .card-section, section .furniture .card-section {
   display: flex;
@@ -102,7 +102,7 @@ section .healthcare .card-section, section .furniture .card-section {
 }
 section .healthcare .product-card, section .furniture .product-card {
   width: 14vw;
-  height: 60vh;
+  height: 70vh;
   background-color: #FFDAC6;
   color: #7C6A0A;
   padding: 20px;
@@ -134,6 +134,7 @@ section .healthcare .product-card .product-image img, section .furniture .produc
 }
 section .furniture .product-card {
   background-color: #BABD8D;
+  color: white;
 }
 
 footer {

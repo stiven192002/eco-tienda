@@ -4,7 +4,7 @@ $tertiary-color: #BABD8D;
 $primary-text-color: #7C6A0A;
 $font-stack:'IBM Plex Sans', sans-serif;
 $paragraph-size:1.5em;
-$queaternary-color:#FA9500;
+$queaternion-color:#FA9500;
 $heder-margin-top:10px;
 
 
@@ -119,7 +119,7 @@ section{
 padding-bottom: 60px;
         h2{
             font-weight: 300;
-            padding-bottom: 60px;
+            padding-bottom: 40px;
         }
         .card-section{
             display: flex;
@@ -136,7 +136,7 @@ padding-bottom: 60px;
 
          .product-card{
             width: 14vw;
-            height: 60vh;
+            height: 70vh;
             background-color: $secondary-color;
             color: $primary-text-color;
             padding: 20px;
@@ -174,7 +174,7 @@ padding-bottom: 60px;
     }
             
     .furniture{
-        @extend.healthcare;
+       @extend.healthcare;
         .product-card{
             background-color: $tertiary-color; 
             color: white;
@@ -189,7 +189,7 @@ padding-bottom: 60px;
 
 footer{
   
-    background-color: $queater-color;  
+    background-color: $queaternion-color;  
     width: 100%;
     height: 250px;
     margin-top: 0;
