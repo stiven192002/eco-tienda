@@ -9,6 +9,24 @@ $heder-margin-top:10px;
 
 
 
+
+@mixin flexcenter($direction, $content, $align ){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $content;
+    align-items: $align;
+
+}
+
+@mixin buttonStyle() {
+    button{
+     background: none;
+     border-style: none;
+
+    }
+
+}
+
 body{
     margin: 0px;
     padding: 0px;
@@ -18,10 +36,10 @@ body{
 }
 
 nav{
-    
+  
     width: auto;
-    display: flex;
-    justify-content: space-between;
+    @include flexcenter(row,space-between ,center ); 
+    
     color: $primary-text-color;
     padding: 15px;
     
@@ -42,11 +60,8 @@ nav{
          margin-top: $heder-margin-top;
          size: 3em;
          
-          
-          button{
-            background: none;
-            border-style: none;
-           }
+          @include buttonStyle;
+         
     }
 }
 
@@ -59,13 +74,13 @@ main{
 
 
 article{
+    @include flexcenter( row,space-between ,center   );
     width: auto;
      color: $primary-text-color;
      padding-left: 45px;
      padding-right: 45px;
      padding: 70px;
-   display: flex;
-   justify-content: space-between;
+   
 
 
    .impact-section{
@@ -85,14 +100,19 @@ article{
         font-size: $paragraph-size;
         padding-left: 10px;
     }
+    @include buttonStyle;
     button{
-        width: 12vw;
+        width: 17vw;
         padding: 20px;
          background-color:$queaternion-color;
         border-style: none;
         font-size: 1em;
         border-radius: 35px;
         color: white;
+        &:hover{
+            transform: scale(1.11);
+        }
+       
     }
     
         img{
@@ -122,12 +142,11 @@ padding-bottom: 60px;
             padding-bottom: 40px;
         }
         .card-section{
-            display: flex;
+            @include flexcenter(row,space-evenly ,center );
+         
             width: auto;
             height: auto;
-            justify-content:center ;
             flex-wrap: wrap;
-            align-items: center;
             column-gap: 100px;
             row-gap: 80px;
 
@@ -186,6 +205,63 @@ padding-bottom: 60px;
 }
 
 
+.about-us{
+    padding-bottom: 60px;
+
+    h2{
+        font-weight: bold;
+        padding-bottom: 60px;
+    }
+    .mission-section{
+        
+        @include flexcenter(row ,space-evenly,center );
+         .earth{
+            width: 30vw;
+            display: flex;
+            gap: 40px;
+            color: #E86424;
+            img{
+                object-fit: contain;
+            }
+            p{
+                text-align: center;
+                font-size: 1.2em;
+                
+            }
+
+         }
+        
+        
+    }
+
+    .innovation{
+        @extend .earth;
+    }
+}
+
+
+
+.gallery{
+    h2{
+        font-weight: bold;
+        padding-bottom: 60px;
+    }
+    .gallery-images{
+      @include flexcenter(row,space-between ,center );
+      
+        img{
+            width: 27vw;
+            height: 70vh;
+            object-fit: cover;
+            
+            border-radius: 16px;
+            &:hover{
+                transform: scale(1.11);
+            }
+           
+        }
+    }
+}
 
 footer{
   
